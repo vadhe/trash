@@ -6,7 +6,9 @@ const theme = extendTheme({
       baseStyle: {
         marginX: '1rem',
         color: '#ffff',
-        textDecoration: 'none'
+        textDecoration: 'none',
+        display: 'block',
+        fontWeight: 'bold'
       }
     }
   }

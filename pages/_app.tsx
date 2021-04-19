@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { AppProps } from 'next/app'
 import Head from 'next/head'
-import { ChakraProvider } from '@chakra-ui/react'
+import { ChakraProvider, CSSReset } from '@chakra-ui/react'
 import 'modern-normalize'
 import theme from 'theme/theme'
 
@@ -13,6 +13,7 @@ export default function MyApp({ Component, pageProps }: AppProps): JSX.Element {
         <title>Next.js TypeScript Quickstart</title>
       </Head>
       <ChakraProvider theme={theme}>
+        <CSSReset />
         <Component {...pageProps} />
       </ChakraProvider>
     </>
