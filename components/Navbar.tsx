@@ -15,8 +15,8 @@ const Navbar: React.FC = () => {
 
   return (
     <Box
-      borderColor="gray.200"
-      borderBottom="4px"
+      borderBottom="1px"
+      borderColor="#46be91"
       borderStyle="solid"
       bg="#21313c"
       minH="1rem"
@@ -32,14 +32,20 @@ const Navbar: React.FC = () => {
         </Box>
       </Flex>
       <Box display={{ base: showHidden, md: 'flex' }}>
-        <Link marginY={{ base: '1rem', md: '0' }} href="https://chakra-ui.com">
+        {/* <Link marginY={{ base: '1rem', md: '0' }} href="https://chakra-ui.com">
           Tentang Kami
-        </Link>
+        </Link> */}
         <Link marginY={{ base: '1rem', md: '0' }} href="https://chakra-ui.com">
           Sejarah
         </Link>
         <Link marginY={{ base: '1rem', md: '0' }} href="https://chakra-ui.com">
+          Visi-Misi
+        </Link>
+        <Link marginY={{ base: '1rem', md: '0' }} href="https://chakra-ui.com">
           Struktur Organisasi
+        </Link>
+        <Link marginY={{ base: '1rem', md: '0' }} href="https://chakra-ui.com">
+          Berita
         </Link>
       </Box>
     </Box>

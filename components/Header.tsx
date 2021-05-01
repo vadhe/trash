@@ -11,10 +11,23 @@ const Header: React.FC = () => {
       backgroundRepeat="no-repeat"
       textAlign="center"
     >
-      <Heading as="h1" color="white" size="lg">
-        Selamat Datang Di Website Trash Stimik Handayani
+      <Heading as="h1" color="white" size="lg" w={{ lg: '50%' }} px="2" mx="auto" pt="6" mb="4">
+        Selamat Datang Di Website Trash (tim Robotika STMIK Handayani Makassar)
       </Heading>
-      <Button bg="#0AD05B" color="white" size="lg" mt="1rem">
+      <Button
+        bg="#0AD05B"
+        _hover={{
+          background: '#0AD05B',
+          color: 'white'
+        }}
+        _active={{
+          background: '#0AD05B',
+          color: 'white'
+        }}
+        color="white"
+        size="lg"
+        mt="1rem"
+      >
         Tentang Kami
       </Button>
     </Box>
